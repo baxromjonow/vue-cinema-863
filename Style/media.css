@@ -1,0 +1,146 @@
+@media (max-width:1140px) {
+    .intro{
+        height: 600px;
+    }
+}
+@media (max-width:1000px) {
+    .intro__box{
+        align-items: center;
+    }
+    .intro__title{
+        font-size: 54px;
+    }
+    .intro__text{
+        max-width: 500px;
+    }
+    .intro{
+        height: 500px;
+    }
+}
+@media (max-width:800px) {
+    #check{
+        display: block;
+    }
+    .menu img{
+        display: block;
+    }
+    .header__top{
+        padding: 10px 0;
+    }
+    .nav__link span{
+        padding: 30px 8px;
+    }
+    .intro{
+        height: 400px;
+    }
+    header{
+        position: relative;
+        overflow: hidden;
+    }
+    .close img{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .nav__list{
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        background-color: var(--dark);
+        height: 100vh;
+        padding: 30px;
+        padding-left: 50px;
+        align-items: center;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+    #check{
+        display: none;
+    }
+
+
+    
+    #check:checked +.nav__list{
+        transform: translate(0);
+        transition: 0.5s;
+    }
+    .nav{
+        padding: 10px 0;
+    }
+    .intro__title{
+        font-size: 40px;
+    }
+    .intro__text{
+        font-size: 15px;
+        text-align: center;
+    }
+    .header__top__img{
+        width: 40px;
+        height: 30px;
+    }
+    .header__top__text{
+        font-size: 15px;
+    }
+    .nav__logo span{
+        font-size: 17px;
+    }
+    .nav__logo img{
+        width: 90px;
+        height: 35px;
+    }
+}
+@media (max-width:600px) {
+    .intro__box{
+        gap: 15px;
+    }
+    .intro__title{
+        font-size: 35px;
+    }
+    .intro__text{
+        line-height: 120%;
+    }
+    .btn{
+        padding: 10px 35px;
+    }
+    .intro{
+        height: 300px;
+    }
+}
+@media (max-width:400px) {
+    .intro__title{
+        font-size: 30px;
+    }
+    .intro__text{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .intro__btns{
+        gap: 10px;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .intro{
+        height: 250px;
+    }
+    .nav__logo img{
+        width: 70px;
+        height: 25px;
+    }
+    .nav__logo span{
+        font-size: 13px;
+    }
+    .header__top{
+        padding: 6px 0;
+    }
+    .nav__link span{
+        padding: 15px 5px;
+    }
+}
