@@ -4,7 +4,17 @@
     }
 }
 @media (max-width:1000px) {
-    
+    .widow{
+        background: #feffff91;
+        height: 500px;
+    }
+    .widow__box{
+        align-items: center;
+    }
+    .widow__video{
+        max-width: 1000px;
+        height: 500px;
+    }
     .film__box{
         max-width: 550px;
         width: 100%;
@@ -50,6 +60,23 @@
     }
 }
 @media (max-width:800px) {
+    .widow{
+        height: 400px;  
+    }
+    .widow__video{
+        height: 400px;
+    }
+    .widow__title{
+        width: 350px;
+        height: 80px;
+    }
+    .widow__box{
+        gap: 20px;
+    }
+    .widow__text{
+        font-size: 16px;
+        line-height: 20px;
+    }
     #check{
         display: block;
     }
@@ -158,6 +185,23 @@
     }
 }
 @media (max-width:400px) {
+    .widow__video{
+        height: 280px;
+    }
+    .widow{
+        height: 280px;
+    }
+    .widow__title{
+        width: 250px;
+        height: 60px;
+    }
+    .widow__text{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
     .film__card{
         width: 150px;
         height: 230px;
