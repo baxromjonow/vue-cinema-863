@@ -1,141 +1,212 @@
 @media (max-width:1140px) {
-    .intro{
+    .intro {
         height: 600px;
     }
 }
+
 @media (max-width:1000px) {
-    .film{
+    .series__grid {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .grid__play,
+    .grid__title {
+        transform: none;
+    }
+
+    .grid__item:hover {
+        box-shadow: none;
+    }
+
+    .series__game {
+        margin-top: 0;
+        background-position: center;
+    }
+
+    .film {
         margin-bottom: 50px;
     }
-    .collect{
+
+    .collect {
         padding: 30px 0;
     }
-    .collect__box{
+
+    .collect__box {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
         margin-top: 30px;
     }
-    .collect__card:hover{
+
+    .collect__card:hover {
         box-shadow: none;
     }
+
     .collect__right,
     .collect__left,
     .collect__play,
-    .collect__title{
+    .collect__title {
         transform: none;
     }
-    .widow{
+
+    .widow {
         background: #feffff91;
         height: 500px;
     }
-    .widow__box{
+
+    .widow__box {
         align-items: center;
     }
-    .widow__video{
+
+    .widow__video {
         max-width: 1000px;
         height: 500px;
     }
-    .film__box{
+
+    .film__box {
         max-width: 550px;
         width: 100%;
         flex-wrap: wrap;
         margin: 0 auto;
         gap: 15px;
     }
-    .film__card{
+
+    .film__card {
         height: 320px;
     }
+
     .film__title,
     .film__text,
     .film__play,
-    .film__time{
+    .film__time {
         transform: translate(0);
     }
-    .film__text{
+
+    .film__text {
         display: -webkit-box;
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
         overflow: hidden;
         overflow-y: scroll;
     }
-    .title{
+
+    .title {
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
     }
-    .film{
+
+    .film {
         margin-top: 15px;
     }
-    .intro__box{
+
+    .intro__box {
         align-items: center;
     }
-    .intro__title{
+
+    .intro__title {
         font-size: 54px;
     }
-    .intro__text{
+
+    .intro__text {
         max-width: 500px;
     }
-    .intro{
+
+    .intro {
         height: 500px;
     }
 }
+
 @media (max-width:800px) {
-    .collect__box{
+    .series__game {
+        height: 380px;
+        gap: 15px;
+    }
+
+    .game__text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .game__title {
+        font-size: 37px;
+    }
+
+    .collect__box {
         margin-top: 0;
         gap: 10px;
     }
-    .collect__card{
+
+    .collect__card {
         width: 300px;
         height: 160px;
     }
-    .collect__play{
+
+    .collect__play {
         width: 35px;
         height: 40px;
     }
-    .widow{
-        height: 400px;  
-    }
-    .widow__video{
+
+    .widow {
         height: 400px;
     }
-    .widow__title{
+
+    .widow__video {
+        height: 400px;
+    }
+
+    .widow__title {
         width: 350px;
         height: 80px;
     }
-    .widow__box{
+
+    .widow__box {
         gap: 20px;
     }
-    .widow__text{
+
+    .widow__text {
         font-size: 16px;
         line-height: 20px;
     }
-    #check{
+
+    #check {
         display: block;
     }
-    .menu img{
+
+    .menu img {
         display: block;
     }
-    .header__top{
+
+    .header__top {
         padding: 10px 0;
     }
-    .nav__link span{
+
+    .nav__link span {
         padding: 30px 8px;
     }
-    .intro{
+
+    .intro {
         height: 400px;
     }
-    header{
+
+    header {
         position: relative;
         overflow: hidden;
     }
-    .close img{
+
+    .close img {
         display: block;
         position: absolute;
         top: 15px;
         left: 15px;
     }
-    .nav__list{
+
+    .nav__list {
         flex-direction: column;
         position: absolute;
         right: 0;
@@ -149,156 +220,224 @@
         transform: translateX(100%);
         transition: 0.5s;
     }
-    #check{
+
+    #check {
         display: none;
     }
 
 
-    
-    #check:checked +.nav__list{
+
+    #check:checked+.nav__list {
         transform: translate(0);
         transition: 0.5s;
     }
-    .nav{
+
+    .nav {
         padding: 10px 0;
     }
-    .intro__title{
+
+    .intro__title {
         font-size: 40px;
     }
-    .intro__text{
+
+    .intro__text {
         font-size: 15px;
         text-align: center;
     }
-    .header__top__img{
+
+    .header__top__img {
         width: 40px;
         height: 30px;
     }
-    .header__top__text{
+
+    .header__top__text {
         font-size: 15px;
     }
-    .nav__logo span{
+
+    .nav__logo span {
         font-size: 17px;
     }
-    .nav__logo img{
+
+    .nav__logo img {
         width: 90px;
         height: 35px;
     }
 }
+
 @media (max-width:600px) {
-    .collect__title{
+    .grid__item{
+        min-height: 150px;
+    }
+    .series__game {
+        height: 300px;
+    }
+
+    .game__text {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .game__title {
+        font-size: 30px;
+    }
+
+    .collect__title {
         font-size: 15px;
     }
-    .collect__card{
+
+    .collect__card {
         width: 270px;
         height: 150px;
     }
-    .film{
+
+    .film {
         margin-bottom: 20px;
     }
-    .collect__box{
+
+    .collect__box {
         margin-top: 15px;
     }
-    .film__box{
+
+    .film__box {
         flex-wrap: nowrap;
         overflow: hidden;
         overflow-x: scroll;
     }
-    .film__card{
+
+    .film__card {
         flex-shrink: 0;
         width: 200px;
     }
-    .film__title{
+
+    .film__title {
         font-size: 18px;
     }
-    .title{
+
+    .title {
         font-size: 28px;
         margin-bottom: 10px;
     }
-    .intro__box{
+
+    .intro__box {
         gap: 15px;
     }
-    .intro__title{
+
+    .intro__title {
         font-size: 35px;
     }
-    .intro__text{
+
+    .intro__text {
         line-height: 120%;
     }
-    .btn{
+
+    .btn {
         padding: 10px 35px;
     }
-    .intro{
+
+    .intro {
         height: 300px;
     }
 }
+
 @media (max-width:400px) {
-    .widow__video{
+    .grid__play{
+        width: 30px;
+        height: 35px;
+    }
+    .grid__title{
+        font-size: 16px;
+    }
+    .grid__item{
+        min-height: 130px;
+    }
+    .widow__video {
         height: 280px;
     }
-    .widow{
+
+    .widow {
         height: 280px;
     }
-    .widow__title{
+
+    .widow__title {
         width: 250px;
         height: 60px;
     }
-    .widow__text{
+
+    .widow__text {
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         overflow-y: scroll;
     }
-    .film__card{
+
+    .film__card {
         width: 150px;
         height: 230px;
         padding: 5px;
     }
-    .film__play{
+
+    .film__play {
         width: 30px;
         height: 33px;
     }
-    .film__time{
+
+    .film__time {
         padding: 4px 15px;
         font-size: 13px;
     }
-    .film__text{
+
+    .film__text {
         -webkit-line-clamp: 4;
         line-height: 15px;
     }
-    .film__title{
+
+    .film__title {
         font-size: 15px;
     }
-    .intro__title{
+
+    .intro__title {
         font-size: 30px;
     }
-    .intro__text{
+
+    .intro__text {
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         overflow: hidden;
         overflow-y: scroll;
     }
-    .intro__btns{
+
+    .intro__btns {
         gap: 10px;
     }
-    .btn{
+
+    .btn {
         padding: 10px 20px;
         font-size: 14px;
     }
-    .intro{
+
+    .intro {
         height: 250px;
     }
-    .nav__logo img{
+
+    .nav__logo img {
         width: 70px;
         height: 25px;
     }
-    .nav__logo span{
+
+    .nav__logo span {
         font-size: 13px;
     }
-    .header__top{
+
+    .header__top {
         padding: 6px 0;
     }
-    .nav__link span{
+
+    .nav__link span {
         padding: 15px 5px;
     }
 }
